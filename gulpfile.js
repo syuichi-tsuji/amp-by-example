@@ -118,7 +118,7 @@ const sampleTemplates = Templates.get(config.templates.root, /* minify */ false,
 
 gulp.task('serve', 'starts a local webserver (--port specifies bound port)',
   function() {
-    const port = argv.port || 8000;
+    const port = argv.port || 7000;
     const server = gls.static(paths.dist.dir, port);
     config.host = "http://localhost:" + port;
     server.start();
